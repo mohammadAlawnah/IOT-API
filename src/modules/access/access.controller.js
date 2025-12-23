@@ -26,7 +26,7 @@ export const checkAccess = async (req, res) => {
 
     const roomObjectId = new mongoose.Types.ObjectId(roomId);
 
-\    const now = new Date();
+    const now = new Date();
 
     console.log("NOW(UTC):", now.toISOString());
     console.log("Student:", student._id.toString(), "fp:", fp, "room:", roomId);
