@@ -21,7 +21,7 @@ router.get(
 router.get(
   "/available",
   auth,
-  allowRoles("admin"),
+  allowRoles("admin", "student"),
   roomControllar.getAvailableRooms
 );
 
